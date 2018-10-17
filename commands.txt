@@ -1,0 +1,47 @@
+    1  mkdir finalexam
+    2  cd finalexam/
+    3  touch commands.txt
+    4  cd ~/Documents/
+    5  mkdir Part1
+    6  cd ~/Desktop/
+    7  clear
+    8  mkdir finalexam
+    9  cd finalexam
+   10  touch commands.txt
+   11  cd ~/Documents/
+   12  mkdir Part1
+   13  mv -r ~/Desktop/finalexam/ ~/Documents/Part1/
+   14  mv ~/Desktop/finalexam/ ~/Documents/Part1/
+   15  cp -r Part1/ ~/Desktop/Current
+   16  cd ~/Desktop/Current/
+   17  mkdir htdocs
+   18  cd htdocs/
+   19  nano index.html
+   20  cd ..
+   21  mkdir scripts
+   22  cd scripts
+   23  mkdir css
+   24  mkdir js
+   25  cd css
+   26  touch style.css
+   27  cd ..
+   28  cd js
+   29  touch myjs.js
+   30  curl  https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js > jq.js
+   31  cd ..
+       cd ..
+cd htdocs/
+mkdir img
+cd img/
+curl https://www.w3schools.com/css/css_image_gallery.asp | grep "img src" > bottom.html
+curl https://www.w3schools.com/css/css_image_gallery.asp | grep "img src" > img.txt
+tail -2 index.html > bottom.html
+head -3 index.html > head.html
+find . -name "*.html" > ~/Desktop/Current/htdocs/find.txt
+cd ~/Documents/
+rm -r Part1/
+cd ..
+Cd Desktop
+cp -r  Current/ ~/Documents/Part1New
+cd ~/Desktop/Current/
+rm -r finalexam/ htdocs/ scripts/
